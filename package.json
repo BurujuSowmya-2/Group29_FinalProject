@@ -1,0 +1,11 @@
+{
+  "name": "cs_29_final_project",
+  "version": "1.0.0",
+  "description": "Fitness portal",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Group_29",
+  "license": "ISC"
+}
