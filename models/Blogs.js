@@ -1,13 +1,16 @@
 const mongoose = require('mongoose');
 
-const blogSchema = new mongoose.schema({
-    userid : {type : mongoose.Schema.type.ObjectId, ref:'User'},
+const blogSchema = new mongoose.Schema({
+    userid : {type : mongoose.Schema.Types.ObjectId, ref:'User'},
+    author:String,
+    title:String,
     body : String,
     dateCreated : Date,
-    commentId : [{type : mongoose.Schema.type.ObjectId, ref : 'Comments'}],
-    likes_count : Number
+    picture : String,
+    commentId : [{type : mongoose.Schema.Types.ObjectId, ref : 'Comments'}],
+  //  likes_count : Number
 
 });
 
 
-module.exports = mongoose.model('Recipe', recipeSchema);
+module.exports = mongoose.model('Blogs', blogSchema);
